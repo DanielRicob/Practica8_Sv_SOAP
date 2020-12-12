@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://com.example.ud/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://com.example.ud/">
+
+<xs:element name="Euro2Pero" type="tns:Euro2Pero"/>
+
+<xs:element name="Euro2PeroResponse" type="tns:Euro2PeroResponse"/>
+
+<xs:element name="getEuro" type="tns:getEuro"/>
+
+<xs:element name="getEuroResponse" type="tns:getEuroResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="peso2Euro" type="tns:peso2Euro"/>
+
+<xs:element name="peso2EuroResponse" type="tns:peso2EuroResponse"/>
+
+<xs:complexType name="getEuro">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getEuroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Euro2Pero">
+<xs:sequence>
+<xs:element name="valor" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Euro2PeroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="peso2Euro">
+<xs:sequence>
+<xs:element name="valor" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="peso2EuroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
